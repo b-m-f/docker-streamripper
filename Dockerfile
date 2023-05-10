@@ -1,9 +1,8 @@
 FROM debian:stretch
-MAINTAINER Christian Lück <christian@lueck.tv>
+MAINTAINER Maximilian Ehlers <github-oss@ehlers.berlin>
 
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends streamripper && \
-    rm -rf /var/lib/apt/lists/*
+    apt-get install -y --no-install-recommends streamripper
 
 RUN useradd -m -d /home/streamripper streamripper
 USER streamripper
