@@ -1,4 +1,4 @@
-FROM debian:stretch
+FROM debian:buster
 MAINTAINER Maximilian Ehlers <github-oss@ehlers.berlin>
 
 RUN apt-get update && \
